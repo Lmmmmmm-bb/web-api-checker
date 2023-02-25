@@ -1,4 +1,4 @@
-export type WebApi =
+export type WebAPI =
  | 'Accelerometer'
  | 'AmbientLightSensor'
  | 'BarcodeDetector'
@@ -65,10 +65,10 @@ export type WebApi =
  | 'WindowControlsOverlay'
  | 'XMLHttpRequest';
 
-export type WebApiSource = 'window' | 'navigator' | 'document' | 'screen';
+export type WebAPISource = 'window' | 'navigator' | 'document' | 'screen';
 
-export type WebApiMapper = {
-  source: WebApiSource;
+export type WebAPIMapper = {
+  source: WebAPISource;
   path: string;
   checker?: undefined;
 } | {

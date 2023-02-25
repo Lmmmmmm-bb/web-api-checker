@@ -1,6 +1,6 @@
-import type { WebApi, WebApiMapper } from './types';
+import type { WebAPI, WebAPIMapper } from './types';
 
-export const webApiMapper: Record<WebApi, WebApiMapper> = {
+export const webAPIMapper: Record<WebAPI, WebAPIMapper> = {
   Accelerometer: { source: 'window', path: 'Accelerometer' },
   AmbientLightSensor: { source: 'window', path: 'AmbientLightSensor' },
   BarcodeDetector: { source: 'window', path: 'BarcodeDetector' },
@@ -104,4 +104,11 @@ export const webApiMapper: Record<WebApi, WebApiMapper> = {
   WebXR: { source: 'navigator', path: 'xr' },
   WindowControlsOverlay: { source: 'navigator', path: 'windowControlsOverlay' },
   XMLHttpRequest: { source: 'window', path: 'XMLHttpRequest' },
+};
+
+export const webAPISourceMapper = {
+  window,
+  navigator,
+  screen,
+  document,
 };
