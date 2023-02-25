@@ -64,3 +64,15 @@ export type WebApi =
  | 'WebXR'
  | 'WindowControlsOverlay'
  | 'XMLHttpRequest';
+
+export type WebApiSource = 'window' | 'navigator' | 'document' | 'screen';
+
+export type WebApiMapper = {
+  source: WebApiSource;
+  path: string;
+  checker?: undefined;
+} | {
+  source?: undefined;
+  path?: undefined;
+  checker: () => boolean | Promise<boolean>;
+};
