@@ -1,44 +1,47 @@
 {
   "name": "web-api-checker",
-  "version": "0.0.1-beta.0",
-  "license": "MIT",
   "type": "module",
-  "description": "check web api support",
+  "version": "0.0.1-beta.0",
   "packageManager": "pnpm@7.27.1",
+  "description": "check web api support",
+  "author": {
+    "email": "lmmmmmm12138@gmail.com",
+    "name": "_lmmmmmm"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Lmmmmmm-bb/web-api-checker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lmmmmmm-bb/web-api-checker"
+  },
   "keywords": [
     "web-api",
     "web-api-checker",
     "browser-api",
     "browser-api-checker"
   ],
-  "homepage": "https://github.com/Lmmmmmm-bb/web-api-checker",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lmmmmmm-bb/web-api-checker"
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
   },
-  "author": {
-    "email": "lmmmmmm12138@gmail.com",
-    "name": "_lmmmmmm"
-  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
-  "module": "dist/index.js",
-  "main": "dist/index.cjs",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
-  },
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
+    "lint": "eslint . --fix",
     "release": "bumpp --commit --tag --push && pnpm publish --no-git-checks"
   },
   "devDependencies": {
+    "@lmmmmmm/eslint-config": "0.0.1-beta.3",
     "bumpp": "^9.0.0",
+    "eslint": "^8.34.0",
     "tsup": "^6.6.3",
     "typescript": "^4.9.5"
   }
