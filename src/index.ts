@@ -1,7 +1,7 @@
 import type { WebAPI } from './types';
 import { webAPIMapper, webAPISourceMapper } from './config';
 
-export const isWebAPISupport = (api: WebAPI | WebAPI[]) => {
+const isWebAPISupport = (api: WebAPI | WebAPI[]) => {
   const apis = Array.isArray(api) ? api : [api];
 
   return apis.every((item) => {
@@ -15,4 +15,9 @@ export const isWebAPISupport = (api: WebAPI | WebAPI[]) => {
       return Boolean(_source[path]);
     }
   });
+};
+
+export {
+  WebAPI,
+  isWebAPISupport,
 };
