@@ -1,7 +1,11 @@
 # Web API Checker
 
-[![license][license-badge]][license-url] [![npm][npm-badge]][npm-url]
+[![codeql][codeql-badge]][codeql-url] [![release][release-badge]][release-url] [![license][license-badge]][license-url] [![npm][npm-badge]][npm-url]
 
+[codeql-badge]: https://github.com/Lmmmmmm-bb/web-api-checker/actions/workflows/codeql-analysis.yml/badge.svg
+[codeql-url]: https://github.com/Lmmmmmm-bb/web-api-checker/actions/workflows/codeql-analysis.yml
+[release-badge]: https://github.com/Lmmmmmm-bb/web-api-checker/actions/workflows/release.yml/badge.svg
+[release-url]: https://github.com/Lmmmmmm-bb/web-api-checker/actions/workflows/release.yml
 [license-badge]: https://img.shields.io/github/license/Lmmmmmm-bb/web-api-checker
 [license-url]: https://github.com/Lmmmmmm-bb/web-api-checker/blob/main/LICENSE
 [npm-badge]: https://img.shields.io/github/v/release/Lmmmmmm-bb/web-api-checker?include_prereleases&sort=semver
