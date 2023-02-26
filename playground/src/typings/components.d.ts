@@ -7,6 +7,6 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Item: typeof import('./../components/Item.vue')['default']
+    Item: typeof import('./../components/Item/index.vue')['default']
   }
 }

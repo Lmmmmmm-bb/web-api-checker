@@ -40,7 +40,7 @@
     "release": "bumpp --commit --tag --push && pnpm publish --no-git-checks"
   },
   "devDependencies": {
-    "@lmmmmmm/eslint-config": "0.0.1-beta.3",
+    "@lmmmmmm/eslint-config": "0.0.1",
     "bumpp": "^9.0.0",
     "eslint": "^8.34.0",
     "tsup": "^6.6.3",

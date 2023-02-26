@@ -11,7 +11,7 @@ export default defineConfig({
     vue(),
     unocss(),
     autoImport({
-      imports: ['vue', 'vue-router', 'vitest'],
+      imports: ['vue'],
       dts: './src/typings/auto-import.d.ts',
       vueTemplate: true,
     }),
