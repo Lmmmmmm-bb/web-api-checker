@@ -9,19 +9,6 @@ export const webAPIMapper: Record<WebAPI, WebAPIMapper> = {
   BroadcastChannel: { source: 'window', path: 'BroadcastChannel' },
   Clipboard: { source: 'navigator', path: 'clipboard' },
   ContactPicker: { source: 'navigator', path: 'contacts' },
-  ContentIndex: {
-    checker: async () => {
-      if ('serviceWorker' in navigator) {
-        try {
-          const registration = await navigator.serviceWorker.ready;
-          return 'index' in registration;
-        } catch {
-          return false;
-        }
-      }
-      return false;
-    },
-  },
   CookieStore: { source: 'window', path: 'CookieStore' },
   DigitalGoods: { source: 'window', path: 'getDigitalGoodsService' },
   EyeDropper: { source: 'window', path: 'EyeDropper' },
@@ -60,7 +47,7 @@ export const webAPIMapper: Record<WebAPI, WebAPIMapper> = {
   Touch: { source: 'window', path: 'Touch' },
   Vibration: { source: 'navigator', path: 'vibrate' },
   VirtualKeyboard: { source: 'navigator', path: 'virtualKeyboard' },
-  VirtualViewport: { source: 'window', path: 'virtualViewport' },
+  VisualViewport: { source: 'window', path: 'visualViewport' },
   WebAnimations: { source: 'window', path: 'Animation' },
   WebAudio: {
     checker: () => window?.AudioContext !== undefined || (window as any)?.webkitAudioContext !== undefined,
