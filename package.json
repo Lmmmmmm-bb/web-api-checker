@@ -34,6 +34,7 @@
   ],
   "scripts": {
     "dev": "tsup --watch",
+    "playground": "pnpm --filter playground dev",
     "build": "tsup",
     "lint": "eslint . --fix",
     "release": "bumpp --commit --tag --push && pnpm publish --no-git-checks"

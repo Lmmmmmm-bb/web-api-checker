@@ -1,0 +1,7 @@
+{
+  "root": true,
+  "extends": ["@lmmmmmm", "@lmmmmmm/eslint-config-vue"],
+  "rules": {
+    "arrow-body-style": ["error", "as-needed"]
+  }
+}
