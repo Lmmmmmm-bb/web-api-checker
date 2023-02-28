@@ -1,5 +1,5 @@
 import type { WebAPI } from './types';
-import { webAPIMapper, webAPISourceMapper } from './config';
+import { webAPIMapper } from './config';
 
 const isWebAPISupport = (api: WebAPI | WebAPI[]) => {
   const apis = Array.isArray(api) ? api : [api];
@@ -10,9 +10,8 @@ const isWebAPISupport = (api: WebAPI | WebAPI[]) => {
       return mapper.checker();
     } else {
       const { source, path } = mapper;
-      const _source = webAPISourceMapper[source];
 
-      return Boolean(_source[path]);
+      return Boolean(source[path]);
     }
   });
 };

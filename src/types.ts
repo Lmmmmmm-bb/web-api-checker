@@ -64,7 +64,7 @@ export type WebAPI =
  | 'WindowControlsOverlay'
  | 'XMLHttpRequest';
 
-export type WebAPISource = 'window' | 'navigator' | 'document' | 'screen';
+export type WebAPISource = typeof window | typeof navigator | typeof document | typeof screen;
 
 export type WebAPIMapper = {
   source: WebAPISource;
