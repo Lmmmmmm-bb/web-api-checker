@@ -13,8 +13,6 @@
 
 > Just check the web api is available or not before using it, inspired by [toniengelhardt](https://github.com/toniengelhardt/webapicheck).
 
-## Install
-
 ```bash
 npm install web-api-checker
 ```
