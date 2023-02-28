@@ -11,7 +11,7 @@ const isWebAPISupport = (api: WebAPI | WebAPI[]) => {
     } else {
       const { source, path } = mapper;
 
-      return Boolean(source[path]);
+      return Boolean(source?.[path]);
     }
   });
 };
