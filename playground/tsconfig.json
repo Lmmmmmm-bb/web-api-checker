@@ -14,7 +14,8 @@
     "baseUrl": ".",
     "noImplicitAny": false,
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["src/*"],
+      "web-api-checker": ["../src/index.ts"]
     }
   },
   "include": [

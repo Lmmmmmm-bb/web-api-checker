@@ -20,6 +20,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '~': resolve(__dirname, 'src'),
+      'web-api-checker': resolve(__dirname, '../src/index.ts'),
     },
   },
 });
