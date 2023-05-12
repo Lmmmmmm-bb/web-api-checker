@@ -16,7 +16,5 @@ const isWebAPISupport = (api: WebAPI | WebAPI[]) => {
   });
 };
 
-export {
-  WebAPI,
-  isWebAPISupport,
-};
+export type { WebAPI };
+export { isWebAPISupport };
