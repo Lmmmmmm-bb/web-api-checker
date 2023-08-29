@@ -2,7 +2,7 @@
   "name": "web-api-checker",
   "type": "module",
   "version": "0.0.5",
-  "packageManager": "pnpm@7.32.4",
+  "packageManager": "pnpm@8.7.0",
   "description": "check web api support",
   "author": {
     "email": "lmmmmmm12138@gmail.com",
@@ -41,10 +41,10 @@
     "release": "bumpp --commit --tag --push && pnpm publish --no-git-checks"
   },
   "devDependencies": {
-    "@lmmmmmm/eslint-config": "0.1.0",
-    "bumpp": "^9.1.0",
-    "eslint": "^8.40.0",
-    "tsup": "^6.7.0",
-    "typescript": "^5.0.4"
+    "@lmmmmmm/eslint-config": "0.3.0",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.48.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
   }
 }
